@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get "/books/:id", to: "books#search"
+      get "/books/convert_isbn13/:id", to: "books#convert_isbn13"
     end
   end
 end
